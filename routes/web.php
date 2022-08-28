@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
@@ -23,4 +24,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/myfirst-controller', 'MyFirstController@index')->name('first');
 
-Route::resource('photos', 'Admin\PhotoController');
+/* Route::resource('photos', 'Admin\PhotoController'); */
+
+Route::prefix('admin')->namespace('Admin')->middleware('auth')->group(function () {
+
+    Route::resource('photos', 'PhotoController');
+   
+});

@@ -40225,15 +40225,27 @@ var app = new Vue({
 
 /***/ }),
 
+/***/ "./resources/sass/site.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/site.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/js/front.js ./resources/sass/back.scss ***!
-  \****************************************************************/
+/*!*******************************************************************************************!*\
+  !*** multi ./resources/js/front.js ./resources/sass/back.scss ./resources/sass/site.scss ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\Davide\Desktop\laravel-ripasso-generale-master\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! C:\Users\Davide\Desktop\laravel-ripasso-generale-master\resources\sass\back.scss */"./resources/sass/back.scss");
+__webpack_require__(/*! C:\Users\Davide\Desktop\laravel-ripasso-generale-master\resources\sass\back.scss */"./resources/sass/back.scss");
+module.exports = __webpack_require__(/*! C:\Users\Davide\Desktop\laravel-ripasso-generale-master\resources\sass\site.scss */"./resources/sass/site.scss");
 
 
 /***/ })
